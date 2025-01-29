@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Zoom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+</head>
+<body>
+
+    <header>
+            <nav >
+                <div class="navbar">
+                    <div class="zoomimage">
+                        <a href="#">
+                            <img src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/ZoomNewLogo.b2fd5c95.png" alt="ZoomLogo" width="110" height="25">
+                        </a>
+                    </div>
+                    <div class="others">
+                        <span class="newToZoom" style="color: black;">New to Zoom?<a href="#" style="color: #0956b5;">SignUp Free</a></span>
+                        <span class="support"> Support</span>
+                        <select name="language" id="language" class="language">
+                            <option value="English">English</option>
+                            <option value="Kannada">Kannada</option>
+                            <option value="Telugu">Telugu</option>
+                            <option value="Hindi">Hindi</option>
+                        </select>
+                    </div> 
+                </div>
+            </nav>
+    </header>
+
+    <main>
+        <div class="middleimage">
+            <img src="https://st1.zoom.us/fe-static/fe-signup-login-active/img/banner-step-1.2faf107a.png" alt="middle image">
+        </div>
+        <div class="maincon">
+            <div class="maincontent">
+                <p id="signinhead">Sign In</p>
+                <form action="" autocomplete="off">
+                    <!-- Email Address -->
+                     <input type="email" placeholder="Email Address" id="email"><br><br>
+                     <!-- Password -->
+                     <input type="password" placeholder="Password" id="password">
+
+                     <!-- Help and Forgot Password -->
+                     <div class="help">
+                        <span id="forgot"><a href="#">Forgot password?</a></span>
+                        <span id="hel"><a href="#">Help</a></span>
+                     </div>
+                     <!-- sign in button -->
+                     <input type="submit" name="submit" id="submit" value="Sign In">
+                     <!-- terms and service -->
+                     <div class="tands">
+                        <p>By signing in, I agree to the <a href="#">Zoom's Privacy<br>Statement</a> and <a href="#">Terms of Sevice</a></p>
+                     </div>
+                     <!-- stay signed in -->
+                     <span id="signedin">
+                        <input type="checkbox" id="checkbox">Stay Signed In
+                     </span>
+                </form>
+                <p>------------ or sign in with  ------------</p>
+                <div class="ways">
+                    <div class="icons"><a href="#" style="color: black;"><i class="fa-brands fa-apple"></i></a></div>
+                    <div class="icons"><a href="#" style="color: greenyellow;"><i class="fa-brands fa-google"></i></a></div>
+                    <div class="icons"><a href="#"><i class="fa-brands fa-facebook"></i></a></div>
+                </div>
+                <div class="tands">
+                    <p>Zoom is protected by reCAPTCHA and the <a href="#">Privacy Policy<br></a> and <a href="#">Terms of Service</a> apply.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>

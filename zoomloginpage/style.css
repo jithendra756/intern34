@@ -1,0 +1,155 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Almaden Sans','Helvetica','Arial';
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+a{
+    cursor: pointer;
+    text-decoration: none;
+    color: #0956b5;
+}
+.navbar{
+    width: 100%;
+    height: 64px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+
+}
+.zoomimage{
+    margin: 0px 50px;
+}
+.others{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+
+}
+.newToZoom, .support, .language{
+    margin: 0px 20px;
+    color: #0956b5;
+}
+.language{
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 6px 6px;
+    border: 2px solid white;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+}
+.language:hover{
+    background-color: #eef8fd;
+}
+.support{
+    cursor: pointer;
+}
+.newToZoom > a:hover, .support:hover, .help a:hover, .tands a:hover{
+    text-decoration: underline;
+}
+.navbar::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #d4cece;
+    height: 1px;
+    top: 60px;
+}
+.middleimage{
+    margin-top: 20px;
+    background-color: #f7f9fa;
+    text-align: center;
+}
+.middleimage > img{
+    width: 204px;
+    height: 144px;
+}
+.maincon{
+    display: flex;
+    justify-content: center;
+
+}
+.maincontent{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 30px 0px;
+    /* border: 2px solid black; */
+    background-color: #f7f9fa;
+    border-radius: 10px;
+    transition: 0.2s ease-out;
+}
+.maincontent:hover{
+    box-shadow: 5px 5px 20px 0px #8ec6e2;
+}
+#signinhead{
+    font-size: 30px;
+    font-weight: bold;
+    color: #0e72ed;
+}
+#email, #password{
+    padding: 12px 12px 0px;
+    width: 346px;
+    height: 48px;
+    border-radius: 10px;
+    font-size: 20px;
+    border-color: #6e7680;
+}
+.help{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#forgot, #hel{
+    margin: 20px 50px;
+}
+#submit{
+    width: 346px;
+    height: 35px;
+    padding: 8px 16px;
+    background-color: #0e72ed;
+    border: 1px solid #0e72ed;
+    border-radius: 10px;
+    color: white;
+    font-size: 15px;
+}
+#submit:hover{
+    background-color: #0b64d2;
+}
+#signedin{
+    float: left;
+}
+.ways{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.icons{
+    height: 48px;
+    width: 48px;
+    display: block;
+    margin: 0px 20px;
+    border: 1px solid rgba(82,82,128,.09);
+    padding: 13px;
+    position: relative;
+    border-radius: 16px;
+    transition: .2s ease-in;
+}
+.icons:hover{
+    background-color: rgb(187, 213, 230);
+}
+.fa-brands{
+    font-size: 25px;
+}
+.tands, p{
+    line-height: 20px;
+}

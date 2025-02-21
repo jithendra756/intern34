@@ -13,13 +13,13 @@
 
     <script>
 
-        async function genPro(){
+        async function genUsers(){
 
             try{
 
                 const users = await fetch('https://dummyjson.com/users')
                 const data = await users.json()
-                // console.log(data)
+                 console.log(data)
                 const divUsers = document.getElementsByClassName('users')[0]
                 // console.log(divUsers)
 
@@ -43,7 +43,7 @@
             }
             
         }
-        genPro()
+        genUsers()
     </script>
 </body>
 </html>

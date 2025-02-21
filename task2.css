@@ -1,0 +1,18 @@
+body{
+    height: 100vh;
+}
+.gp, .child{
+    display: flex;
+    justify-content: space-around;
+}
+.child{
+    border: 2px solid red;
+    text-align: center;
+    margin: 10px;
+}
+.parent{
+    display:grid;
+    grid-template-rows: 100px 100px;
+    grid-template-columns: 100px 100px;
+    border: 2px solid black;
+}

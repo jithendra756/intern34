@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Users</h1>
+    <div class="users">
+
+    </div>
+
+    <script>
+
+        async function genPro(){
+
+            try{
+
+                const users = await fetch('https://dummyjson.com/users')
+                const data = await users.json()
+                // console.log(data)
+                const divUsers = document.getElementsByClassName('users')[0]
+                // console.log(divUsers)
+
+                data.users.forEach(user =>{
+
+                    // console.log(user.firstName)
+                    const userDiv = document.createElement('div')
+                    userDiv.classList.add('user');
+                    userDiv.innerHTML = `
+
+                    <p>${user.firstName}  ${user.lastName}</p>
+                    <br>
+                    `
+                    divUsers.appendChild(userDiv);
+                })
+
+            }
+            catch(err)
+            {
+                console.log("error occured");
+            }
+            
+        }
+        genPro()
+    </script>
+</body>
+</html>

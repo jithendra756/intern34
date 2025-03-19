@@ -1,0 +1,23 @@
+.cc {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 20px; 
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: auto;
+  /* background-color: rgb(203, 95, 95); */
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  align-content: center;
+}
+.ccp{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+
+
+  
